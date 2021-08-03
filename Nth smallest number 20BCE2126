@@ -1,4 +1,4 @@
-*/
+/*
 Vedant Modi
 20BCE2126
 Nth smallest number
@@ -13,12 +13,15 @@ int nthsmallest(int data[], int k, int n)
 }
 int main()
 {
+    int sizeofarray,data[100],n;
     cin >> sizeofarray;
     for (int i = 0; i < sizeofarray; ++i)
     {
-        cin >> arr[i];
+        cin >> data[i];
     }
-    int k = sizeof(data) / sizeof(data[0]), n = 2;
-    cout << "N'th smallest element is " << nthSmallest(data, k, n);
+    cout<<"nth number";
+    cin>>n;
+    int k = sizeofarray;
+    cout << "N'th smallest element is " << nthsmallest(data, k, n);
     return 0;
 }
