@@ -6,15 +6,19 @@ Nth smallest number
 #include <algorithm>
 #include <iostream>
 using namespace std;
-int nthsmallest(int arr[], int k, int n)
+int nthsmallest(int data[], int k, int n)
 {
-    sort(arr, arr + k);
-    return arr[n - 1];
+    sort(data, data + k);
+    return data[n - 1];
 }
 int main()
 {
-    int arr[] = { 12, 3, 5, 7, 19 };
-    int k = sizeof(arr) / sizeof(arr[0]), n = 2;
-    cout << "N'th smallest element is " << nthSmallest(arr, k, n);
+    cin >> sizeofarray;
+    for (int i = 0; i < sizeofarray; ++i)
+    {
+        cin >> arr[i];
+    }
+    int k = sizeof(data) / sizeof(data[0]), n = 2;
+    cout << "N'th smallest element is " << nthSmallest(data, k, n);
     return 0;
 }
